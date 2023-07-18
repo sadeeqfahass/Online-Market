@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav {
+  background: #1A5D1A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.nav .logo {
+  color: #fff;
+}
+
+.nav .logo h1 {
+  letter-spacing: .5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+nav .logo p {
+  font-size: 1.3rem;
+  margin-top: -0.2rem;
+}
+
+.nav .links {
+  display: flex;
+  align-items: center;
+}
+
+.nav .links ul {
+  display: flex;
+}
+
+.nav .links ul li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.nav .links ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav .icons {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.nav .icons i:first-child {
+  margin-right: 1rem;
+}
+
+.hero {
+  padding: 5rem 2rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  /* gap: 2rem; */
+  /* background-image: url(bg11.jpg);
+  background-repeat: no-repeat; */
+}
+
+.hero .left .main-heading {
+  font-size: 3rem;
+}
+
+.hero .left .sub-heading {
+  font-weight: 300;
+  line-height: 2;
+}
+
+.hero .left .btn {
+  text-decoration: none;
+  color: #fff;
+  padding: .7rem 1rem;
+  background: #1A5D1A;
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: .3rem;
+}
+
+.hero .right {
+  position: relative;
+}
+
+.hero .right .img-round {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  outline: .2rem #1A5D1A solid;
+  position: absolute;
+}
+
+.hero .right .ginger {
+  top: -5%;
+  left: 25%;
+}
+
+.hero .right .hibiscus {
+  top: 3%;
+  left: 52%;
+}
+
+.hero .right .maize {
+  top: 22%;
+  left: 70%;
+}
+
+.hero .right .sesame {
+  top: 48%;
+  left: 70%;
+}
+
+.hero .right .soyabean {
+  top: 71%;
+  left: 59%;
+}
+.rate {
+  background: #000;
+  margin: -2.5rem 2rem 0;
+  padding: 2rem;
+  color: #fff;
+  outline: .2rem #1A5D1A solid;
+  outline-offset: .2rem;
+}
+
+.rate .price-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rate .price-con .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rate .price-con .card .price {
+  font-weight: 500;
+  color: #1A5D1A;
+}
+
+.about {
+  padding: 5rem 2rem;
+}
+
+.about-title,
+.info-title {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+.about-text {
+  display: flex;
+  gap: 2rem;
+}
+
+.about-text p {
+  text-align: justify;
+  line-height: 1.7;
+  width: 50%;
+}
+
+.about-text .video {
+  width: 40rem;
+  height: 17rem;
+  background-image: url(videoCover.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text .video .play-btn {
+  width: 2.5rem;
+  height: 3rem;
+  background: #fff;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+/* .info {
+  padding: 7rem 2rem;
+  background-image: url(bg222.jpg);
+  background-repeat: no-repeat; 
+}
+
+.info-con {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.info .info-card {
+  width: 20%;
+  backdrop-filter: blur(300px);
+  background: transparent;
+  color: #fff; 
+  border-bottom: .3rem solid #1A5D1A;
+}
+
+.info .info-card .top {
+  padding: 0;
+}
+
+.info .info-card .bottom {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.info-card .card-img {
+  width: 15rem;
+} */
+
+.faqs-con {
+  margin: 5rem 2rem;
+}
+
+.faqs {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.faq-title {
+  text-align: left;
+}
+
+.faqs .faq {
+  margin: 1rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, .3);
+}
+
+.faqs .faq .faq-question {
+  position: relative;
+  font-size: 20px;
+  padding-right: 80px;
+  transition: all 0.4s ease;
+}
+
+.faqs .faq .faq-question::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 1.8rem;
+  height: 1.8rem;
+  transition: all 0.2s ease;
+}
+
+.faqs .faq .faq-answer {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.faqs .faq.open .faq-question {
+  margin-bottom: 1rem;
+}
+
+.faqs .faq.open .faq-question::after {
+  content: "-";
+}
+
+.faqs .faq.open .faq-answer {
+  max-height: 1000px;
+  opacity: 1;
+}
